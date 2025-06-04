@@ -1,0 +1,38 @@
+{
+  "name": "ramones-capulong-portfolio",
+  "version": "1.0.0",
+  "description": "Ramones Capulong - Modern graphic design portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx http-server . -p 8000 -c-1",
+    "validate": "npm run validate:html && npm run validate:css && npm run validate:js",
+    "validate:html": "npx html-validate *.html",
+    "validate:css": "npx stylelint css/*.css",
+    "validate:js": "npx eslint js/*.js",
+    "build": "echo 'Production build completed. Files are ready for deployment.'",
+    "preview": "start http://localhost:8000"
+  },
+  "keywords": [
+    "portfolio",
+    "graphic-design",
+    "responsive",
+    "html5",
+    "css3",
+    "javascript",
+    "animations"  ],
+  "author": "Ramones Capulong <elefesramones51@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "html-validate": "^8.0.0",
+    "http-server": "^14.0.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

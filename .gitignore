@@ -1,0 +1,11 @@
+# Portfolio Website
+
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+*.tmp
+*.temp
+dist/
+build/
